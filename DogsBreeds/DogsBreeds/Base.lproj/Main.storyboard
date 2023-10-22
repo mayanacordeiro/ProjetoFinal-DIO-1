@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QhD-8C-Xsc">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="iQF-cN-j5q">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="QhD-8C-Xsc" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="3g7-P2-cZ0">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" systemColor="systemOrangeColor"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="5nE-12-HTC" kind="relationship" relationship="viewControllers" id="zeC-Be-hE4"/>
+                        <segue destination="Df4-NS-in6" kind="relationship" relationship="viewControllers" id="4dH-4h-0YD"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ul1-J4-756" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130.53435114503816" y="-27.464788732394368"/>
+        </scene>
+        <!--Breeds List-->
+        <scene sceneID="Nb5-NJ-o04">
+            <objects>
+                <viewController id="qLU-dX-fMZ" customClass="ListViewController" customModule="DogsBreeds" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RI0-KL-AgU">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="mtE-bf-h8x">
+                                <rect key="frame" x="0.0" y="119" width="393" height="650"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="eeQ-qK-rgE"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="mtE-bf-h8x" firstAttribute="leading" secondItem="eeQ-qK-rgE" secondAttribute="leading" id="Ecp-gM-hBT"/>
+                            <constraint firstItem="mtE-bf-h8x" firstAttribute="top" secondItem="eeQ-qK-rgE" secondAttribute="top" constant="16" id="KMv-Ut-vQZ"/>
+                            <constraint firstItem="eeQ-qK-rgE" firstAttribute="bottom" secondItem="mtE-bf-h8x" secondAttribute="bottom" id="dkg-kj-32A"/>
+                            <constraint firstItem="eeQ-qK-rgE" firstAttribute="trailing" secondItem="mtE-bf-h8x" secondAttribute="trailing" id="rne-LN-gq6"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Breeds List" id="IxF-jd-8gd"/>
+                    <connections>
+                        <outlet property="breedsTableView" destination="mtE-bf-h8x" id="5MT-T3-2HL"/>
+                        <segue destination="Zm0-kK-rWN" kind="show" identifier="breedsSegue" id="iRv-fe-1UD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9HE-O1-pu7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2251.1450381679388" y="-395.07042253521126"/>
+        </scene>
+        <!--Breed Images View Controller-->
+        <scene sceneID="yYe-wJ-zZc">
+            <objects>
+                <viewController id="Zm0-kK-rWN" customClass="BreedImagesViewController" customModule="DogsBreeds" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nRu-MR-dJE">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="gUi-Qb-eD9"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="fLz-dw-bMh"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7eZ-vg-oLm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3160" y="-395"/>
+        </scene>
+        <!--Search-->
+        <scene sceneID="SsR-IS-p96">
+            <objects>
+                <viewController id="Df4-NS-in6" customClass="SearchViewController" customModule="DogsBreeds" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OlL-3M-WMI">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="PiP-tL-HXe"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Search" image="magnifyingglass" catalog="system" id="mAw-7Z-bOa"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TWM-aD-m8N" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1131" y="296"/>
+        </scene>
+        <!--List-->
+        <scene sceneID="cIy-7g-Mck">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5nE-12-HTC" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="List" image="list.bullet" catalog="system" id="qTM-Aw-iNT">
+                        <color key="badgeColor" systemColor="systemOrangeColor"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ryD-Yf-z4k">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" systemColor="systemOrangeColor"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="qLU-dX-fMZ" kind="relationship" relationship="rootViewController" id="FVB-gD-Vpq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pqY-4d-nQy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1324.4274809160304" y="-395.07042253521126"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="list.bullet" catalog="system" width="128" height="87"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="117"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
