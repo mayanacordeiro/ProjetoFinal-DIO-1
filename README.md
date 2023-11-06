@@ -20,3 +20,6 @@ Proposta: utilizar o Swift como linguagem de programação, **UIkit, Storyboard,
 
 Em contrução
 
+## Link para o repositório dos outros dois projetos
+https://github.com/mayanacordeiro/ProjetoFinal-DIO-2
+https://github.com/mayanacordeiro/ProjetoFinal-DIO-3
