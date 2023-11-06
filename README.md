@@ -4,7 +4,7 @@
 
 **DogsBreeds** te permite conhecer sobre as raças de cachorros!
 
-O app consiste em uma tela com uma lista das raças de cachorros existentes, ao clicar num raça é possível visualizar fotos de cachorras da respectiva raça. Há também a possibilidade de buscar por uma raça para visualizar fotos dos cachorros. 
+O app consiste em uma tela com uma lista das raças de cachorros existentes, ao clicar num raça é possível visualizar fotos de cachorros da respectiva raça. Há também a possibilidade de buscar por uma raça para visualizar fotos dos cachorros. 
 
 A lista de raças e imagens utilizadas são da **API** https://dog.ceo/dog-api/ disponível na lista do repositório https://github.com/public-apis/public-apis
 
