@@ -20,6 +20,16 @@ Proposta: utilizar o Swift como linguagem de programação, **UIkit, Storyboard,
 
 Em contrução
 
+## Uso
+Clone o repositório : git clone https://github.com/mayanacordeiro/ProjetoFinal-DIO-1.git
+
+Abra o projeto no Xcode
+
+Faça o build no simulador
+
+## Licença 
+Este projeto é licenciado sob a licença MIT. Leia o LICENSE file para mais detalhes.
+
 ## Link para o repositório dos outros dois projetos
 https://github.com/mayanacordeiro/ProjetoFinal-DIO-2
 https://github.com/mayanacordeiro/ProjetoFinal-DIO-3
